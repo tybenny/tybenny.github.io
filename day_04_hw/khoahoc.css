@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    padding: 20px;
+    margin: px 0 20px;
+}
+
+
+
+.item .box{
+    border: 1px solid #464646; 
+}

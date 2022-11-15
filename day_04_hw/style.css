@@ -1,0 +1,99 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); */
+/* font-family: 'Roboto', sans-serif; */
+/* padding và margin */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+}
+
+img{
+    max-width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.image {
+    height: 220px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    padding: 15px;
+}
+
+
+
+.content h3 {
+    color: #464646;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.content p{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.content p span{
+    color: #ffd600;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container {
+    margin: auto;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#course .col{
+    flex-basis: 25%;
+    padding: 20px 15px;
+}
+
+a.link{
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+  }
+  
+.footer {
+    background-color: #30598c;
+    color:#d4dce6;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    padding: 20px 15px;
+    margin: 20px 0 80px;
+}
+
+.footer h3,a,div{
+    margin: 20px 0 20px;
+}
