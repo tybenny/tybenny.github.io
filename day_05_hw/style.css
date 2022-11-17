@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(85, 175, 231);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #757575;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: #757575;
+}
+
+.menu {
+    background-color: #fff;
+    position: relative;
+}
+
+.menu {
+    text-transform: capitalize;
+}
+
+.menu-item {
+    width: 200px;
+}
+
+.menu-item p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 27px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.menu-item p .icon {
+    display: none;
+}
+
+.menu-item:hover > p a {
+    color: coral;
+}
+
+.menu-item:hover > p .icon {
+    display: inline-block;
+    color: coral
+}
+
+.sub-menu:hover > p a {
+    color: coral;
+}
+
+.sub-menu:hover > p#sub .icon {
+    display: inline-block;
+    color: coral
+}
+
+.sub-menu {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: #fff;
+    display: none;
+    height: 100%;
+}
+
+
+.menu-item:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu2{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: #fff;
+    display: none;
+    height: 100%;
+}
+
+.sub-menu:hover .sub-menu2{
+    display: block;
+}
+
