@@ -10,7 +10,6 @@ a:link
     text-decoration: none;
 }
 
-img{border-radius: 20px;}
 
 a:visited
 {
@@ -136,16 +135,74 @@ body
     height: 150px;
 }
 
+.dexuat
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.style
+{
+    margin: 10px 0;
+}
+
+.style1
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.style2
+{
+    font-size: 14px;
+    flex-basis: 15%;
+    padding: 15px;
+    border: 1px solid #757575;
+    border-radius: 20px;
+    margin: 0 10px;
+    transition: all .3s;
+    background-color: #a575f1;
+}
+
+.style2:hover
+{
+    scale: 1.3;
+    box-shadow: 1px 2px 2px 1px #ebe5fd;
+}
+
+
+
+.col p.buy:hover
+{
+    scale: 1.1;
+    border-bottom: 2px solid #393548;
+    transition: all .3s;
+}
+
 .card
 {
     background-color: #fff;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .image
 {
     width: 400px;
     height: 500px;
+    transition: all .4s;
+}
+
+.image:hover
+{
+    scale: 1.2;
 }
 
 .container
@@ -182,48 +239,45 @@ body
     line-height: 23px;
 }
 
-.menu1
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-}
 
-.menu1 > a {
-    padding: 10px;
-}
 
-.menu ul
-{
-    display: flex;
-}
 
-.menu-item
+.header .menu ul li
 {
-    color: #fff;
+    display: inline-block;
     position: relative;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    line-height: 15px;
 }
 
-.sub-menu
+.header .menu ul li ul li
 {
-    position: absolute;
-    top: 100px;
-    width: 200px;
-    box-shadow: 0 4px 4px 0, rgb(0, 0, 0 / 15%);
+    border-bottom: 1px solid white;
+}
+
+.header .menu ul li ul.sub-menu
+{
+    min-width: 100%;
+    background-color: #757575;
+    color: #fff;
     display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
 }
 
-.menu-item:hover .sub-menu
+.header .menu ul li ul li:hover ul.sub-menu
 {
-    display: flex;
+    display: block;
+    left: 100%;
+    top: 0%;
+    position: absolute;
 }
+
+.header .menu ul li:hover ul.menu1
+{
+    display: block;
+}
+
 
 .ad
 {
@@ -236,7 +290,14 @@ body
     border-top: 1px solid #757575;
     border-bottom: 1px solid #757575;
     background-color: yellow;
+    margin: 10px 0;
 }
+
+.sale
+{
+    margin: 20px 0;
+}
+
 
 .ad span
 {
@@ -289,6 +350,8 @@ body
 {
     background-color: #393548;
     color: #fff;
+    position: relative;
+    height: 300px;
 }
 
 .social
@@ -302,4 +365,36 @@ body
 {
     padding-right: 30px;
     padding-top: 15px;
+}
+
+.footer .tick
+{
+    width: 135px;
+    height: 51px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.tick img
+{
+    width: 135px;
+    height: 51px;
+}
+
+.info
+{
+    position: absolute;
+    font-size: 12px;
+    bottom: 10px;
+    left: 20px;
+    text-transform: uppercase;
+    display: flex;
+    line-height: 18px;
+}
+
+.info img
+{
+    width: 80px;
+    height: 80px;
 }

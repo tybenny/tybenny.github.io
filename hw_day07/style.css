@@ -56,3 +56,20 @@ body
         background-position: 50em 0;
     }
 }
+
+.all
+{
+    height: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text
+{
+    width: 500px;
+    height: 400px;
+    padding: 25px;
+    background-image: url(./cardimg.png);
+    
+}
