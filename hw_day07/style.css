@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: url(./img1.jpg) no-repeat center ;
+    background-size: cover;
+    position: relative;
+}
+.snow , .snow2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./snow.png);
+    background-position: 0 0;
+}
+
+.snow
+{
+    background-size: 70em;
+    animation: snowfall 30s linear infinite;
+}
+
+.snow2
+{
+    background-size: 50em;
+    animation: snowfall2 30s linear infinite;
+    opacity: 0.5;
+}
+
+.text
+{
+    width: 500px;
+    background-color: #fff;
+}
+
+@keyframes snowfall
+{
+    100%{
+        background-position: 70em 70em;
+    }
+}
+
+@keyframes snowfall2
+{
+    100%{
+        background-position: 50em 0;
+    }
+}
+.all
+{
+    height: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: bump 1s infinite;
+}
+
+@keyframes bump
+{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+}
+
+.container
+{
+    transform: rotate(-45deg);
+}
+
+.text
+{
+    width: 500px;
+    height: 800px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: justify;
+    background-color: lightpink;
+    border-radius: 300px 300px 0 0;
+    position: relative;
+}
+
+.text h3,p
+{
+    transform: rotate(45deg);
+    line-height: 20px;
+    left: 250px;
+    margin: auto;
+}
+
+.text h3
+{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+.text::before
+{
+    content: "";
+    position: absolute;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    background-color: lightpink;
+    border-radius: 400px 400px 0 0;
+    left: 150px;
+    top: 150px;
+    z-index: -10;
+}
+
