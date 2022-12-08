@@ -14,7 +14,6 @@ public class ArrayDemo2 {
                 System.out.println("Nhập phan tử: [" + i + "][" + j + "]");
                 arrayA[i][j]= sc.nextInt();
             }
-
         }
 
         int max = arrayA[0][0];
